@@ -1,4 +1,4 @@
-require "pry"
+# require "pry"
 
 def get_user_input
   gets.chomp
@@ -20,6 +20,6 @@ end
 
 def runner
   prompt_user
-  binding.pry
-  selection(get_user_input)
+  # binding.pry
+  selection(num)
 end
