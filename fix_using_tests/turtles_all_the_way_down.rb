@@ -1,3 +1,5 @@
+
+
 def turtles
     [
       {name: "Donatello", weapon: "bo-staff", traits: ["serious", "leader"]},
@@ -9,10 +11,8 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    turtle.each do |trait|
-      if trait[:traits] ==turtles 
+    turtle[:traits].each do |trait|
       trait
-    end 
     end
   end
 end
