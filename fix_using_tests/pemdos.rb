@@ -4,4 +4,5 @@ def snake_it_up(string)
   else
   string
   end
+  snake_it_up
 end
