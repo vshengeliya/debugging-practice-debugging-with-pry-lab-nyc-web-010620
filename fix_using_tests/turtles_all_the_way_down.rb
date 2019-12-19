@@ -10,8 +10,8 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      if trait 
+    turtle.each do |trait|
+      if trait[:traits]
       trait
     end
   end
