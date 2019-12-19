@@ -4,8 +4,6 @@ class Person
   def initialize(name, candy_lover)
     @name = name
     @candy_lover = candy_lover
-    if candy_lover [:person]== true
-  return "Aw sweet, this cat loves them some candy!"
   end
 
   def tall?
@@ -17,16 +15,16 @@ class Person
   end
 
   def likes_candy?
-    true
+    candy_lover
   end
-require "pry"
+
   def ballin_candy_lover?
-    if @candy_lover == true
+    if likes_candy?
       "Aw sweet, this cat loves them some candy!"
     else
       10.times do
         "not a ballin candy lover"
-        binding.pry
+      end
     end
   end
 end
