@@ -13,6 +13,7 @@ def turtle_traits(turtles)
     turtle.each do |trait|
       if trait[:traits] ==turtles 
       trait
+    end 
     end
   end
 end
