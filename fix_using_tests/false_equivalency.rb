@@ -21,5 +21,5 @@ end
 def runner
   prompt_user
   # binding.pry
-  selection(num)
+  selection(prompt_user)
 end
